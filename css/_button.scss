@@ -1,0 +1,47 @@
+button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+    &.login {
+        color: $text-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &.signup {
+        color: $white;
+        background-color: $black;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    &.view-camp {
+        border: 1px solid #ddd;
+        color: $black;
+        width: 100%;
+    }
+    &.post-comment {
+        width: 100%;
+    }
+    img {
+        vertical-align: middle;
+    }
+    i {
+        margin-right: 10px;
+    }
+}
+a {
+    font-size: 15px;
+    font-weight: 600;
+    color: $text-color;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

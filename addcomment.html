@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Add comment page</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Assets/Logo.svg" alt="logo">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <div class="btns">
+                <button class="login">John Doe</button>
+                <button class="login" onclick="window.location.href='index.html'">Logout</button>
+            </div>
+        </nav>
+        <div class="close"><img src="./Assets/Close.svg" alt="close"></div>
+        <div class="menu"><img src="./Assets/menu.svg" alt="menu"></div>
+    </header>
+    <div class="section-comment">
+        <h1>Add New Comment</h1>
+        <p>Description</p>
+        <textarea name="comment" id="comment" placeholder="This was probably the best camp i've visited this past year, definitly recommend visiting and time soon."></textarea>
+        <button class="signup post-comment" onclick="window.location.href='logged.html'">Post Comment</button>
+    </div>
+    <footer>
+        <div class="log"><img src="./Assets/Logo.svg" alt="logo"></div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

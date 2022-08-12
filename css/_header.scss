@@ -1,0 +1,68 @@
+header {
+    position: relative;
+    @media #{$small} {
+        padding: 30px 50px;
+        nav {
+            width: calc(100% - 120px);
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu {
+            display: none !important;
+        }
+    }
+    @media #{$mobile} {
+        justify-content: space-between;
+        nav {
+            display: block;
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            text-align: center;
+            border: 1px solid $text-color;
+            padding: 20px;
+            border-radius: 4px;
+            background-color: $dark-bg;
+            a {
+                color: $white;
+            }
+
+            .btns {
+                display: block;
+                button {
+                    width: 100%;
+                    color: $white;
+                }
+            }
+
+        }
+    }
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    .logo {
+        margin-right: 30px;
+    }
+    nav {
+        display: none;
+    }
+    .close {
+        display: none;
+        img {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .menu {
+        img {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}

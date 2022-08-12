@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Signup page</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <header>
+                    <div class="logo"><img src="./Assets/Logo.svg" alt="logo"></div>
+                    <div class="back">
+                        <button class="login" onclick="window.location.href='index.html'">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                            Back to campgrounds
+                        </button>
+                    </div>
+                </header>
+                <form>
+                    <h1>Start exploring camps from all <br>around the world.</h1>
+                    <p>
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="jphndoe_91" name="username" id="username" class="field username">
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" name="password" id="password" class="field password">
+                    </p>
+                    <p>
+                        <input type="submit" value="Create in account" class="submit">
+                    </p>
+                    <p>
+                        Not a user yet <a href="signin.html">sign in</a>
+                    </p>
+                </form>
+            </div>
+            <div class="feedback">
+                <div class="said">
+                    <p class="quote">
+                        "YelpCamp has homestly<br> saved me hours of <br>
+                        research time, and the <br> camps on here are <br>
+                        definitely well picked and added."
+                    </p>
+                    <div class="person">
+                        <img src="./Assets/UserTestimonial.svg" alt="user">
+                        <div class="name">
+                            <h4>May Andrews</h4>
+                            <p>Professional Hiker</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        if(document.forms[0]) {
+            document.forms[0].addEventListener("submit", function(e) {
+                e.preventDefault();
+                window.location.href = "logged.html";
+            });
+        }
+    </script>
+</html>

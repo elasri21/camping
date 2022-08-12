@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Logged page</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Assets/Logo.svg" alt="logo">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <div class="btns">
+                <button class="login">John Doe</button>
+                <button class="login" onclick="window.location.href='index.html'">Logout</button>
+            </div>
+        </nav>
+        <div class="close"><img src="./Assets/Close.svg" alt="close"></div>
+        <div class="menu"><img src="./Assets/menu.svg" alt="menu"></div>
+    </header>
+    <div class="new-camp">
+        <h2>Add New Campgroung</h2>
+        <form>
+            <p>
+                <label for="camp-name">Campground Name</label>
+                <input type="text" placeholder="Seven Sisters Waterfall" name="camp-name" id="camp-name" class="field camp-name">
+            </p>
+            <p>
+                <label for="camp-name">Price</label>
+                <input type="text" placeholder="$149" name="price" id="price" class="field price">
+            </p>
+            <p>
+                <label for="camp-name">Image</label>
+                <input type="text" placeholder="www.thepinoytraveler.com/2018/01/hiking.html" name="image" id="image" class="field image">
+            </p>
+            <p>
+                <label for="camp-name">Description</label>
+                <textarea type="text" placeholder="The Seven Sisters is 39th tallest waterfall in Norway. The 410-meter tall waterfall consists of seven seperate streams. And the tallest of the seven has a free fall that measures 250 meters. The waterfall is located along the country of Norway." name="description" id="description" class="field description"></textarea>
+            </p>
+            <div class="add-camp">
+                <button class="signup">Add Campground</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="log"><img src="./Assets/Logo.svg" alt="logo"></div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
